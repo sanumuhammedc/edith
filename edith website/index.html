@@ -99,22 +99,22 @@
 					<!-- <p>Lorem ipsum dolor sit amet ectetur sicing elit, sed do eiusmod tempor incididunt ut labore.</p> -->
 				</div>
 				<div class="col-md-3 col-sm-6 text-center service">
-					<i class="fa fa-laptop"></i>
+					<i class="fa fa-users"></i>
 					<h3>Team</h3>
 					<p>You have to form a team and each team must contain 2-4 members.  </p>
 				</div>
 				<div class="col-md-3 col-sm-6 text-center service">
-					<i class="fa fa-picture-o"></i>
+					<i class="fa   fa-clipboard"></i>
 					<h3>Registration</h3>
 					<p>Registration is mandatory for participating to the competition . </p>
 				</div>
 				<div class="col-md-3 col-sm-6 text-center service">
-					<i class="fa fa-rocket"></i>
+					<i class="fa fa-list-ol"></i>
 					<h3>Rounds</h3>
-					<p>The competition will be 3 rounds. Screening and filtering will be done in each round </p>
+					<p>The competition will be 3 rounds. Screening and filtering will be done in each</p>
 				</div>
 				<div class="col-md-3 col-sm-6 text-center service">
-					<i class="fa fa-shopping-cart"></i>
+					<i class="fa fa-question"></i>
 					<h3>Questions</h3>
 					<p>All the Questions will be based on legendary marvel cinematic universe </p>
 				</div>
@@ -125,7 +125,7 @@
 	<section id="about-page">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 text-center">
+				<!-- <div class="col-md-12 text-center">
 					<h1 class="about-title">About Us</h1>
 					<div class="service-aro-icon">
 						<div class="service-aro-left"></div>
@@ -134,21 +134,16 @@
 					</div>
 					<h2>We are creative and young</h2>
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-				</div>
-				<div class="col-md-4 text-center member">
-					<div class="member-img">
-						<img src="images/01.jpg" alt="" />
-						<div class="member-social">
-							<a class="facebook-icon" href=""><i class="fa fa-facebook"></i></a>
-							<a class="twitter-icon" href=""><i class="fa fa-twitter"></i></a>
-							<a class="linkedin-icon" href=""><i class="fa fa-linkedin"></i></a>
-							<a class="google-plus-icon" href=""><i class="fa fa-google-plus"></i></a>
-						</div>
+				</div> -->
+				<div class=" ">
+					<div class="video-container">
+						
+						<iframe width="560" height="315"
+						src="https://www.youtube.com/embed/TISi9mLBrO8?autoplay=1">
+						</iframe>
 					</div>
-					<h3>Lucy</h3>
-					<span>Lead Developer</span>
 				</div>
-				<div class="col-md-4 text-center member">
+				<!-- <div class="col-md-4 text-center member">
 					<div class="member-img">
 						<img src="images/02.jpg" alt="" />
 						<div class="member-social">
@@ -160,8 +155,8 @@
 					</div>
 					<h3>Smith</h3>
                     <span>Designer</span>
-				</div>
-				<div class="col-md-4 text-center member">
+				</div> -->
+				<!-- <div class="col-md-4 text-center member">
 					<div class="member-img">
 						<img src="images/03.jpg" alt="" />
 						<div class="member-social">
@@ -173,7 +168,7 @@
 					</div>
 					<h3>Shon</h3>
 					<span>Developer</span>
-				</div>
+				</div> -->
 			</div><!-- /.row -->
 		</div><!-- /.container -->
 	</section><!-- /#about-page -->
@@ -275,7 +270,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 text-center">
-					<p>&copy; 2015 <strong></strong>. All Rights Reserved. Designed by <strong><a href="http://templatestock.co" target="_blank">Template Stock</a></strong></p>
+					<p>&copy; 2021 <strong></strong>. All Rights Reserved. Designed by <strong>nss soe</strong></p>
 				</div>
 			</div>
 		</div>
@@ -287,11 +282,18 @@
 	<script type="text/javascript" src="js/countdown.js"></script><!-- Countdown -->
 	<script type="text/javascript" src="js/jquery.ajaxchimp.js"></script><!-- ajaxchimp -->
 	<script type="text/javascript" src="js/scripts.js"></script><!-- Scripts -->
-
+	<script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+<df-messenger
+  chat-icon="https:&#x2F;&#x2F;www.pikpng.com&#x2F;pngl&#x2F;b&#x2F;478-4782685_iron-man-jarvis-marvel-png-download-jarvis-iron.png"
+  intent="WELCOME"
+  chat-title="JARVIS"
+  agent-id="c823c66c-7338-48e6-9e6c-130bb7dc02b7"
+  language-code="en"
+></df-messenger>
 	<!-- =========================================================
 	     STYLE SWITCHER | ONLY FOR DEMO NOT INCLUDED IN MAIN FILES
 	============================================================== -->
-	<script type="text/javascript" src="js/styleswitcher.js"></script>
+	<!-- <script type="text/javascript" src="js/styleswitcher.js"></script>
 	<script type="text/javascript" src="js/demo.js"></script>
 	<div class="demo-style-switch" id="switch-style">
 		<a id="toggle-switcher" class="switch-button"><i class="fa fa-cog fa-spin fa-fw"></i></a>
@@ -342,26 +344,7 @@
 				
 			</ul>
 		</div>
-	</div>
-<!--script for form submission-->
-	<script>
-        $("#main-contact-form").submit((e)=>{
-            e.preventDefault()
-            $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbzqNMIEpMyqaLXF2erWy5d-JKnESMiiX_tKghIK/exec",
-                data:$("#main-contact-form").serialize(),
-                method:"post",
-                success:function (response){
-                    alert("Form submitted successfully")
-                    window.location.reload()
-                    //window.location.href="https://google.com"
-                },
-                error:function (err){
-                    alert("Something Error")
-    
-                }
-            })
-        })
-    </script>
+
+	</div> -->
 </body>
 </html>
