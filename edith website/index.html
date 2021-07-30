@@ -194,7 +194,7 @@
 									<textarea name="queries" id="message" class="form-control" rows="1" placeholder="Queries..."></textarea>
 								</div>
 								<div class="form-group">
-									<button type="submit" name="submit" class="btn btn-primary btn-lg submit-button" onclick="myFunction()" value="Reset form" >Submit</button>
+									<button type="submit" name="submit" id="submit-btn" class="btn btn-primary btn-lg submit-button"  value="Reset form" >Submit</button>
 								</div>
 							</div>
                             </div>     
@@ -235,6 +235,8 @@
 	<script>
         $("#main-contact-form").submit((e)=>{
             e.preventDefault()
+			document.getElementById("submit-btn").disabled = true;
+			document.getElementById("submit-btn").innerHTML="Submitting...."
             $.ajax({
                 url:"https://script.google.com/macros/s/AKfycbzqNMIEpMyqaLXF2erWy5d-JKnESMiiX_tKghIK/exec",
                 data:$("#main-contact-form").serialize(),
