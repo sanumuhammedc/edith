@@ -199,7 +199,7 @@
 									<input type="number" name="leader number" required="required" class="form-control" placeholder="Team leader phone number">
 								</div>
 							</div>
-							<div class="row">
+							<!--<div class="row">-->
 								<div class="col-sm-5 your-name col-sm-offset-1">	
 									<div class="form-group">
 										<input type="text" name="2nd member" class="form-control" required="required" placeholder="2nd member name">
@@ -209,8 +209,8 @@
 									<div class="form-group">
 										<input type="number" name="2nd member number" required="required" class="form-control" placeholder="2nd member phone number">
 									</div>
-								</div>
-								<div class="row">
+							</div>
+								<!--<div class="row">-->
 									<div class="col-sm-5 your-name col-sm-offset-1">
 										<div class="form-group">
 											<input type="text" name="3rd member" class="form-control" placeholder="3rd member name">
@@ -221,7 +221,7 @@
 											<input type="number" name="3rd member number" class="form-control" placeholder="3rd member phone number">
 										</div>
 									</div>
-									<div class="row">
+									<!--<div class="row">-->
 										<div class="col-sm-5 your-name col-sm-offset-1">
 											<div class="form-group">
 												<input type="text" name="4th member" class="form-control" placeholder="4th member name">
@@ -232,7 +232,7 @@
 												<input type="number" name="4th member number" class="form-control" placeholder="4th member phone number">
 											</div>
 										</div>
-										<div class="row">
+										<!--<div class="row">-->
 											<div class="col-sm-5 your-name col-sm-offset-1">
 												<div class="form-group">
 													<input type="text" name="team name" required="required" class="form-control" placeholder="Your team name">
@@ -250,7 +250,7 @@
 									<textarea name="queries" id="message" class="form-control" rows="1" placeholder="Queries..."></textarea>
 								</div>
 								<div class="form-group">
-									<button type="submit" name="submit" class="btn btn-primary btn-lg submit-button" onclick="myFunction()" >Submit</button>
+									<button type="submit" name="submit" class="btn btn-primary btn-lg submit-button" >Submit</button>
 								</div>
 							</div>
                             </div>     
@@ -341,7 +341,7 @@
 			</ul>
 		</div>
 	</div>
-<!--script for form submission-->
+<--script for form submission-->
 	<script>
         $("#main-contact-form").submit((e)=>{
             e.preventDefault()
@@ -360,10 +360,7 @@
                 }
             })
         })
-		function myFunction() {
-  document.getElementById("main-contact-form").reset();
-}
     </script>
-	</div> -->
+	</div>
 </body>
 </html>
