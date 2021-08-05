@@ -241,13 +241,13 @@
 			document.getElementById("submit-btn").disabled = true;
 			document.getElementById("submit-btn").innerHTML="Submitting...."
             $.ajax({
-                url:"https://script.google.com/macros/s/AKfycbzqNMIEpMyqaLXF2erWy5d-JKnESMiiX_tKghIK/exec",
+                url:"#",
                 data:$("#main-contact-form").serialize(),
                 method:"post",
                 success:function (response){
                     alert("Form submitted successfully.Accept whatsapp group invitation to complete your registration")
                     window.location.reload()
-                    window.location.href="https://chat.whatsapp.com/ERhI1Qbbznc27KMqry6yeI"
+                   // window.location.href="https://www.google.com"
                 },
                 error:function (err){
                     alert("Something Error")
